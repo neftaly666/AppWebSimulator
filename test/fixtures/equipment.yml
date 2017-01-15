@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipo: MyString
+  cantidad: 1
+  tiempo: 1
+  potencia: 1
+
+two:
+  equipo: MyString
+  cantidad: 1
+  tiempo: 1
+  potencia: 1
