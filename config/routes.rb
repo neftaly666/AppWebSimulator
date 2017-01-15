@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 root 'home#sala'
   
   get "cuarto" => "home#cuarto", as: :cuarto
@@ -7,6 +8,15 @@ root 'home#sala'
   get "bano" => "home#bano", as: :bano
   get "exterior" => "home#exterior", as: :exterior
   get "recomendaciones" => "home#recomendaciones", as: :recomendaciones
+=======
+ 
+  resources :iquipments
+
+  resources :equipment
+
+get 'home/index'
+root 'home#index'
+>>>>>>> origin/master
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

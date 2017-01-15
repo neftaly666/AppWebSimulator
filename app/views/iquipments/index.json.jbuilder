@@ -1,0 +1,1 @@
+json.array! @iquipments, partial: 'iquipments/iquipment', as: :iquipment

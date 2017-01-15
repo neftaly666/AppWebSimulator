@@ -1,0 +1,37 @@
+<%= form_for(iquipment) do |f| %>
+  <% if iquipment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(iquipment.errors.count, "error") %> prohibited this iquipment from being saved:</h2>
+
+      <ul>
+      <% iquipment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :equipo %>
+    <%= f.text_field :equipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cantidad %>
+    <%= f.number_field :cantidad %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tiempo %>
+    <%= f.text_field :tiempo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :potencia %>
+    <%= f.number_field :potencia %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
