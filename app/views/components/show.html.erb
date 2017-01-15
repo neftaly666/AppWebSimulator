@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Equipo:</strong>
+  <%= @component.equipo %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @component.cantidad %>
+</p>
+
+<p>
+  <strong>Tiempo:</strong>
+  <%= @component.tiempo %>
+</p>
+
+<p>
+  <strong>Potencia:</strong>
+  <%= @component.potencia %>
+</p>
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>
