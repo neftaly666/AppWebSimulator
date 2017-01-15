@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Equipo:</strong>
+  <%= @iquipment.equipo %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @iquipment.cantidad %>
+</p>
+
+<p>
+  <strong>Tiempo:</strong>
+  <%= @iquipment.tiempo %>
+</p>
+
+<p>
+  <strong>Potencia:</strong>
+  <%= @iquipment.potencia %>
+</p>
+
+<%= link_to 'Edit', edit_iquipment_path(@iquipment) %> |
+<%= link_to 'Back', iquipments_path %>

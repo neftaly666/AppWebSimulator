@@ -1,0 +1,1 @@
+json.partial! "iquipments/iquipment", iquipment: @iquipment
