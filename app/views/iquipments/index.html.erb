@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Iquipments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Equipo</th>
+      <th>Cantidad</th>
+      <th>Tiempo</th>
+      <th>Potencia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @iquipments.each do |iquipment| %>
+      <tr>
+        <td><%= iquipment.equipo %></td>
+        <td><%= iquipment.cantidad %></td>
+        <td><%= iquipment.tiempo %></td>
+        <td><%= iquipment.potencia %></td>
+        <td><%= link_to 'Show', iquipment %></td>
+        <td><%= link_to 'Edit', edit_iquipment_path(iquipment) %></td>
+        <td><%= link_to 'Destroy', iquipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Iquipment', new_iquipment_path %>
