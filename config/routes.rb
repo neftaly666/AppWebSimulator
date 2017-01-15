@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :equipment
+  resources :components
 root 'home#sala'
   
   get "cuarto" => "home#cuarto", as: :cuarto
