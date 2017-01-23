@@ -4,44 +4,8 @@
       <p id="notice"><%= notice %></p>
 
 <center>
-	<h2>Components</h2>
+	<h2>Componentes</h2>
 </center>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre  </th>
-      <th>Uso diario </th>
-      <th>Tiempo Horas/dias </th>
-      <th>Potencia Watts </th>
-      <th>KWH/Mes </th>
-      <th>Costo/Mes d </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @components.each do |component| %>
-      <tr>
-        <td><%= component.equipo %></td>
-        <td><%= component.cantidad %></td>
-        <td><%= component.tiempo %></td>
-        <td><%= component.potencia %></td>
-         <td><%= (component.potencia*component.tiempo*component.cantidad*30)/1000%></td>
-         <td><%= (component.potencia*component.tiempo*component.cantidad*0.5) %></td>
-        <td><%= link_to 'Show', component %></td>
-        <td><%= link_to 'Edit', edit_component_path(component) %></td>
-        <td><%= link_to 'Destroy', component, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-  
-  
-</table>
-<%= link_to 'New Component', new_component_path %>
-        </div>
-         </div>
-
 <div class="jumbotron">
 	<div class="container">
 		<p id="notice"><%= notice %></p>
