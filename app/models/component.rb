@@ -1,3 +1,3 @@
 class Component < ApplicationRecord
-  validates :equipo, presence: true 
+  validates :equipo, presence: {message: "Campo Obligatorio"}
 end
